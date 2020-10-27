@@ -5,7 +5,7 @@ import cors from 'cors';
 import mongoMessages from './models/messageModel.js';
 
 const App = express();
-const port = process.env.API_PORT || 9000;
+const port = process.env.PORT || 5000;
 
 /* Middlewares */
 App.use(express.json());
@@ -60,7 +60,6 @@ App.get('/api/messages', (req, res) => {
 		res.send(sortedData);
 	})
 });
-
 
 /* Arranque */ 
 App.listen(port, () => console.log(`Hello! Solati chat server is running in port: ${port}`));
