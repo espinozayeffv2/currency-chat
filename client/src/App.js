@@ -13,16 +13,24 @@ const pusher = new Pusher('dbca6b598453283932d2', {
   cluster: 'us2'
 });
 
-const getCurrency = (amount) => {
+const getCurrency = () => {
   const params = {
     access_key: '3b9ca85e040ed075f28083d4abdbd6d4',
-    from: 'COP',
-    to: 'USD',
-    amount
+    currencies: 'COP',
   }
 
-  return axiosCurrency('/convert', { params });
+  return axiosCurrency('/live', { params });
 } 
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const roundNumber = (value = 0, decimals = 2) => Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+
+const addSeparatos = (value) =>     value = value ?? 0
+  ? Intl.NumberFormat().format(value)
+  : 0;
+
+const formatNumber = pipe(roundNumber, addSeparatos);
 
 export default function App(){
   const [input, setInput] = useState('');
@@ -59,10 +67,9 @@ export default function App(){
     if (input.includes('/convertir')) {
       const quantity = input.split(' ')[1];
       if (quantity) {
-        const { data }  = await getCurrency(quantity)
-          .catch(console.error);
-
-        currencyMessage = `${quantity}COP equivalen a ${''}USD`;
+        const { data }  = await getCurrency(quantity).catch(console.error);
+        const conversion = quantity / data.quotes.USDCOP
+        currencyMessage = `${formatNumber(quantity)}COP equivalen a ${formatNumber(conversion)}USD`;
       }
     }
 
