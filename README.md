@@ -26,6 +26,7 @@ Servidor:
 $ nodemon
 ```
 ## ¿Cómo usarlo?
+Sólo ingresa tu nombre en la ventana de diálogo inicial, acepta y envía tantos mensajes desees.
 
 Para convertir cualquier cantidad de pesos colombianos a dólares, sólo debes escribir el siguiente comando:
 ```sh
@@ -33,6 +34,8 @@ Para convertir cualquier cantidad de pesos colombianos a dólares, sólo debes e
 ```
 
 **Importante**: a pesar de que existe toda la funcionalidad para la conversión de monedas, los servicios gratuitos ofrecidos por https://currencylayer.com, sólo permiten llamados tipo HTTP, por lo que cualquier hosting HTTPS bloquea dicha petición y ocurre un error. Este problema se solventará próximamente.
+## Demo
+https://espinozayeffv2.github.io/currency-chat/
 
 ## Roadmap
 
