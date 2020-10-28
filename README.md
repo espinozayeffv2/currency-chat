@@ -41,6 +41,7 @@ https://espinozayeffv2.github.io/currency-chat/
 
  - React.js
  - Express.js
+ - MongoDB
  - Heroku (alojamiento de API)
  - API externa gratuita: https://currencylayer.com/
 
