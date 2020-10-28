@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/currency-chat/static/css/main.71f66383.chunk.css",
+    "main.js": "/currency-chat/static/js/main.45d29985.chunk.js",
+    "main.js.map": "/currency-chat/static/js/main.45d29985.chunk.js.map",
+    "runtime-main.js": "/currency-chat/static/js/runtime-main.d8b8e120.js",
+    "runtime-main.js.map": "/currency-chat/static/js/runtime-main.d8b8e120.js.map",
+    "static/js/2.5cfd42d6.chunk.js": "/currency-chat/static/js/2.5cfd42d6.chunk.js",
+    "static/js/2.5cfd42d6.chunk.js.map": "/currency-chat/static/js/2.5cfd42d6.chunk.js.map",
+    "index.html": "/currency-chat/index.html",
+    "precache-manifest.a0b97e9cac5ea551f7172df50c69bfcc.js": "/currency-chat/precache-manifest.a0b97e9cac5ea551f7172df50c69bfcc.js",
+    "service-worker.js": "/currency-chat/service-worker.js",
+    "static/css/main.71f66383.chunk.css.map": "/currency-chat/static/css/main.71f66383.chunk.css.map",
+    "static/js/2.5cfd42d6.chunk.js.LICENSE.txt": "/currency-chat/static/js/2.5cfd42d6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8b8e120.js",
+    "static/js/2.5cfd42d6.chunk.js",
+    "static/css/main.71f66383.chunk.css",
+    "static/js/main.45d29985.chunk.js"
+  ]
+}
