@@ -37,6 +37,13 @@ Para convertir cualquier cantidad de pesos colombianos a dólares, sólo debes e
 ## Demo
 https://espinozayeffv2.github.io/currency-chat/
 
+## Tecnologías
+
+ - React.js
+ - Express.js
+ - Heroku (alojamiento de API)
+ - API externa gratuita: https://currencylayer.com/
+
 ## Roadmap
 
 Esta es la lista de mejoras necesarias, para llevar el proyecto a un estado óptimo: 
